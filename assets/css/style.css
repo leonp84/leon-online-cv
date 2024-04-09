@@ -30,8 +30,8 @@ body {
 }
 
 header {
-    background: url(../images/bckg.webp) no-repeat top center / cover;
-    height:670px;
+    background: url(../images/bckg.webp) no-repeat center center / cover;
+    height:800px;
     width: 100%;
     background-color: aquamarine;
     display: flex;
@@ -57,15 +57,15 @@ button:hover {
 }
 
 #portfolio-image {
-    margin-top: 20px;
-    height: 650px;
+    align-self: flex-end;
+    height: 750px;
     position: absolute;
     z-index: 0;
     overflow: hidden;
 }
 
 .wrapper {
-    margin-top: 150px;
+    margin-top: 200px;
     text-align: center;
     padding: 0 10px;
     z-index: 1;
@@ -106,9 +106,9 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-top: 3px solid #5A7576;
-    background-color: #082532;
-    color: rgb(212, 197, 197);
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    background-color: #2635382c;
     padding: 50px 25px;
 }
 
@@ -123,14 +123,14 @@ h1 {
 }
 
 #about-me-social i {
-    color: white;
     font-size: 50px;
-    margin: 30px 20px;
+    margin: 15px 20px;
 }
 
 #about-me-text {
     max-width: 350px;
     font-size: smaller;
+    color: rgb(36, 37, 47);
 }
 
 #about-me-text button {
@@ -147,7 +147,6 @@ h2 {
 }
 
 h3 {
-    color: white;
     line-height: 150%;
 }
 
@@ -170,17 +169,30 @@ h2, h3 {
     color: #156082;
 }
 
+#parallax {
+    height: 350px;
+    background: url(../images/leon-speaking.webp) no-repeat center center / cover;
+    background-attachment: fixed;
+}
+
+#skills {
+    height: 1000px;
+    background: url(../images/bckg.webp) no-repeat center center / cover;
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+}
 
 @media screen and (min-width: 768px) {
 
     header {
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     h1 {
         font-size: 40px;
     }
     #portfolio-image { 
+        height: 680px;
         position: static;
         margin-right: 30px;
         order: 2;
@@ -188,7 +200,7 @@ h2, h3 {
     
     .wrapper {
         margin-top: 15px;
-        max-width: 380px;;
+        max-width: 350px;;
     }
 
     .wrapper p {
@@ -232,18 +244,23 @@ h2, h3 {
 
 
 @media screen and (min-width: 992px) { 
+
+    header {
+        justify-content: space-evenly;
+    }
+
     .wrapper {
         max-width: 500px;
+        font-size: larger;
     }
 
     #portfolio-image { 
-        margin-top: 70px;
-        /* margin-right: 150px; */
-        height: 600px;
+        height: 700px;
     }
 
     #about-me-section {
         padding-top: 100px;
+        padding-bottom: 100px;
         justify-content: center;
     }
 
