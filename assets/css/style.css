@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+/* 
+Light Green     - #5A7576
+Rich Black      - #262626;
+Faded Green     - #3C4f53
+Liver Brown     - #6A493F
+Some Blue       - #156082;
+*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.some-blue {
+    background-color: #156082;
+    border: 1px solid white;
+}
+
+.rich-black {
+    background-color: #262626;
+    border: 1px solid #7c8688
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+header {
+    background: url(/assets/images/bckg.webp) no-repeat top center / cover;
+    height:670px;
+    width: 100%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header button {
+    margin: 5px;
+    margin-top: 10px;
+    border-radius: 25px;
+    padding: 10px 12px;
+    border: none;
+    color: white;
+    font-size: 22px;
+
+}
+
+#portoflio-image {
+    margin-top: 20px;
+    height: 650px;
+    position: absolute;
+    z-index: 0;
+}
+
+.text-in-front {
+    margin-top: 150px;
+    text-align: center;
+    padding: 0 10px;
+    z-index: 1;
+    color: white;
+    max-width: 400px;
+}
+
+.text-in-front p {
+    margin: 10px 25px;
+    font-size: larger;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 20px;
+    padding: 5px
+}
+
+.text-with-background {
+    background-color: #05191A;
+    border: 2px solid #3C4f53;
+    padding: 7px;
+    margin: 10px 0;
+}
+
+#name-intro {
+    font-size: x-large;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+.social-icons {
+    display: none;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    h1 {
+        font-size: 40px;
+    }
+    #portoflio-image { 
+        right: 50px;
+    }
+    
+    .text-in-front {
+        margin-top: 15px;
+        align-self: flex-start;
+        max-width: 380px;;
+    }
+
+    .text-in-front p {
+        background-color: transparent;
+    }
+    
+    .text-with-background {
+        background-color: transparent;
+        border: none
+    }
+
+    .social-icons {
+        display: block;
+        align-self: flex-start;
+        margin-left: 115px;
+    }
+
+    .social-icons i {
+        color: white;
+        font-size: 50px;
+        margin: 10px
+    }
+
+}
