@@ -29,12 +29,12 @@ body {
 }
 
 header {
-    background: url('/assets/images/bckg.webp') no-repeat top center / cover;
+    background: url(../images/bckg.webp) no-repeat top center / cover;
     height:670px;
     width: 100%;
     background-color: aquamarine;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
 }
@@ -43,21 +43,26 @@ header button {
     margin: 5px;
     margin-top: 10px;
     border-radius: 25px;
-    padding: 10px 12px;
+    padding: 10px 15px;
     border: none;
     color: white;
     font-size: 22px;
 
 }
 
-#portoflio-image {
+header button:hover {
+    background-color:white;
+    color: black;
+}
+
+#portfolio-image {
     margin-top: 20px;
     height: 650px;
     position: absolute;
     z-index: 0;
 }
 
-.text-in-front {
+.wrapper {
     margin-top: 150px;
     text-align: center;
     padding: 0 10px;
@@ -66,7 +71,7 @@ header button {
     max-width: 400px;
 }
 
-.text-in-front p {
+.wrapper p {
     margin: 10px 25px;
     font-size: larger;
     background-color: rgba(0,0,0,0.4);
@@ -94,22 +99,29 @@ h1 {
 }
 
 
+
+
 @media screen and (min-width: 768px) {
+
+    header {
+        justify-content: space-evenly;
+    }
 
     h1 {
         font-size: 40px;
     }
-    #portoflio-image { 
-        right: 50px;
+    #portfolio-image { 
+        position: static;
+        margin-right: 30px;
+        order: 2;
     }
     
-    .text-in-front {
+    .wrapper {
         margin-top: 15px;
-        align-self: flex-start;
         max-width: 380px;;
     }
 
-    .text-in-front p {
+    .wrapper p {
         background-color: transparent;
     }
     
@@ -120,8 +132,7 @@ h1 {
 
     .social-icons {
         display: block;
-        align-self: flex-start;
-        margin-left: 115px;
+        margin-bottom: 10px;
     }
 
     .social-icons i {
@@ -130,4 +141,21 @@ h1 {
         margin: 10px
     }
 
+    .social-icons i:hover {
+        color: #156082;
+    }
+
+}
+
+
+@media screen and (min-width: 992px) { 
+    .wrapper {
+        max-width: 500px;
+    }
+
+    #portfolio-image { 
+        margin-top: 70px;
+        /* margin-right: 150px; */
+        height: 600px;
+    }
 }
