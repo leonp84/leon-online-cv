@@ -29,7 +29,7 @@ body {
 }
 
 header {
-    background: url(/assets/images/bckg.webp) no-repeat top center / cover;
+    background: url('/assets/images/bckg.webp') no-repeat top center / cover;
     height:670px;
     width: 100%;
     background-color: aquamarine;
@@ -75,8 +75,8 @@ header button {
 }
 
 .text-with-background {
-    background-color: #05191A;
-    border: 2px solid #3C4f53;
+    background-color: #262626;
+    border: 2px solid #7c8688;
     padding: 7px;
     margin: 10px 0;
 }
