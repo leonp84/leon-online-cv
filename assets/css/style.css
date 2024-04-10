@@ -491,7 +491,7 @@ footer i:hover {
     }
 }
 
-@media screen and (min-width: 992px) { 
+@media screen and (min-width: 1200px) { 
     #parallax {
         background-attachment: fixed;
     }
