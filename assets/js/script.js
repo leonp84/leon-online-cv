@@ -56,4 +56,5 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('git-skill').addEventListener('mouseout', function () {
         this.src = "assets/images/skills/git-skill-nc.png"
     })
+    document.getElementById('current-year').innerHTML = new Date().getFullYear() + ' Ⓒ  Leon Potgieter';
 })
