@@ -37,7 +37,6 @@ header {
     background: url(../images/bckg.webp) no-repeat center center / cover;
     height:800px;
     width: 100%;
-    background-color: aquamarine;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -214,9 +213,10 @@ h2, h3 {
 }
 
 #parallax {
-    height: 450px;
+    height: 200px;
     background: url(../images/leon-speaking.jpg) no-repeat center center / cover;
-    background-attachment: fixed;
+    background-size: 150%;
+    background-attachment: scroll;
 }
 
 #darker-background {
@@ -435,6 +435,12 @@ form input, form textarea {
         margin: 15px;
         margin-top: 30px;
     }
+
+    #parallax {
+        height: 270px;
+        background: url(../images/leon-speaking.jpg) no-repeat center center / cover;
+        background-attachment: scroll;
+    }
 }
 
 
@@ -467,5 +473,9 @@ form input, form textarea {
         font-size: larger;
         margin-left: 50px;
         max-width: 700px;
+    }
+
+    #parallax {
+        background-attachment: fixed;
     }
 }
