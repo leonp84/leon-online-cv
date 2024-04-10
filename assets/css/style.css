@@ -169,18 +169,121 @@ h2, h3 {
     color: #156082;
 }
 
+
+#skills {
+    height: auto;
+    padding-top: 50px;
+    /* padding-bottom: 80px; */
+    background: url(../images/bckg.webp) no-repeat center center / cover;
+    border-top: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+#skills h3 {
+    font-size: 30px;
+}
+
+#skills p {
+    font-size: smaller;
+    line-height: 180%;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.skills-box {
+    width: 290px;
+    height: auto;
+    background-color: rgb(15, 15, 17);
+    margin: 20px;
+    border: 2px solid white;
+    border-radius: 15px;
+    padding: 5px 15px;
+}
+
 #parallax {
-    height: 350px;
-    background: url(../images/leon-speaking.webp) no-repeat center center / cover;
+    height: 450px;
+    background: url(../images/leon-speaking.jpg) no-repeat center center / cover;
     background-attachment: fixed;
 }
 
-#skills {
-    height: 1000px;
-    background: url(../images/bckg.webp) no-repeat center center / cover;
-    border-top: 3px solid white;
-    border-bottom: 3px solid white;
+#darker-background {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding-top: 80px;
+    padding-bottom: 100px;
 }
+
+#more-about-me {
+    height: 1000px;
+    border-top: 3px solid white;
+    background-color: black;
+}
+
+#skill-ind {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skill-ind img {
+    width: 280px;
+}
+
+#tech-stack img {
+    width: 60px;
+    margin: 5px;
+    margin-top: 15px;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+.project-box {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: rgb(232, 223, 223);
+    padding: 15px;
+    margin: 10px 30px;
+    border: 1px solid white;
+}
+
+.project-box img {
+    height: 200px;
+    width: auto;
+    margin-bottom: 15px;
+}
+
+.project-box span {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 40px;
+    margin: 10px;    
+}
+
+
 
 @media screen and (min-width: 768px) {
 
