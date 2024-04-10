@@ -2,7 +2,7 @@
 
 
 /* 
-Light Green     - #5A7576
+Light Green     - #5A7576;
 Rich Black      - #262626;
 Faded Green     - #3C4f53
 Liver Brown     - #6A493F
@@ -13,6 +13,10 @@ Some Blue       - #156082;
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+}
+
+body {
+    width: 100vw;
 }
 
 .some-blue {
@@ -223,54 +227,72 @@ h2, h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
     padding-top: 80px;
     padding-bottom: 100px;
 }
 
 #more-about-me {
-    height: 1000px;
+    height: 300px;
     border-top: 3px solid white;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+    font-size: x-large;
+    padding: 60px 30px;
+    text-align: center;
+    line-height: 170%;
+}
+
+blockquote {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    max-width: 550px;
 }
 
 #skill-ind {
-    margin-top: 30px;
+    margin: 30px 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 #skill-ind img {
+    margin: 10px 0;
     width: 280px;
 }
 
 #tech-stack img {
     width: 60px;
     margin: 5px;
-    margin-top: 15px;
+    margin-top: 30px;
 }
 
 #projects {
     display: flex;
-    flex-direction: column;
-    height: fit-content;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 800px;
 }
 .project-box {
-    width: 300px;
+    width: 270px;
+    height: 320px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: rgb(232, 223, 223);
     padding: 15px;
-    margin: 10px 30px;
+    margin: 15px 5px;
     border: 1px solid white;
 }
 
 .project-box img {
-    height: 200px;
+    height: 180px;
     width: auto;
     margin-bottom: 15px;
 }
@@ -283,7 +305,44 @@ h2, h3 {
     margin: 10px;    
 }
 
+.project-box i:hover {
+    color: #5A7576;
+}
 
+#contact-section {
+    padding: 100px 0;
+    background: url(../images/contact-bck.webp) no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-section h2 {
+    font-size: 40px;
+    color: bisque;
+}
+
+#contact-section form{
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+    color: whitesmoke;
+}
+
+#contact-section button{
+    padding: 15px;
+    width: 250px;
+    color: black
+}
+
+form input, form textarea {
+    background-color: rgb(193, 194, 214);
+    border: 1px solid black;
+    width: 80%;
+    max-width: 550px;
+    margin: 10px;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -342,6 +401,39 @@ h2, h3 {
 
     #profile-image {
         width: 400px;
+    }
+
+    .project-box {
+        width: 330px;
+        height: 350px;
+        margin: 15px;
+    }
+    
+    .project-box img {
+        height: 220px;
+    }
+
+    #skill-ind {
+        margin: 30px 10px;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #skill-ind img {
+        margin: 10px 0;
+        width: 450px;
+    }
+
+    #tech-stack {
+        margin-left: 20px;
+    }
+    
+    #tech-stack img {
+        width: 100px;
+        margin: 15px;
+        margin-top: 30px;
     }
 }
 
