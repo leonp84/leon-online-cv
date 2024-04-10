@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-/* 
-Light Green     - #5A7576;
-Rich Black      - #262626;
-Faded Green     - #3C4f53
-Liver Brown     - #6A493F
-Some Blue       - #156082;
-*/
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -17,19 +8,6 @@ Some Blue       - #156082;
 
 body {
     width: 100vw;
-}
-
-.some-blue {
-    background-color: #156082;
-    border: 1px solid white;
-}
-
-.rich-black {
-    background-color: #262626;
-    border: 1px solid #7c8688
-}
-
-body {
     font-family: "Roboto", sans-serif;
 }
 
@@ -41,6 +19,26 @@ header {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+
+#portfolio-image {
+    align-self: flex-end;
+    height: 750px;
+    position: absolute;
+    z-index: 0;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h3 {
+    line-height: 150%;
+}
+
+h2, h3 {
+    margin-top: 15px;    
 }
 
 button {
@@ -57,14 +55,6 @@ button {
 button:hover {
     background-color:white;
     color: black;
-}
-
-#portfolio-image {
-    align-self: flex-end;
-    height: 750px;
-    position: absolute;
-    z-index: 0;
-    overflow: hidden;
 }
 
 .wrapper {
@@ -91,18 +81,13 @@ button:hover {
     margin: 10px 0;
 }
 
-#name-intro {
-    font-size: x-large;
-}
-
-h1 {
-    font-size: 24px;
-}
-
 .social-icons {
     display: none;
 }
 
+#name-intro {
+    font-size: x-large;
+}
 
 #about-me-section {
     display: flex;
@@ -113,6 +98,11 @@ h1 {
     border-bottom: 3px solid white;
     background-color: #2635382c;
     padding: 50px 25px;
+}
+
+#profile-image {
+    width: 95%;
+    max-width: 350px;
 }
 
 #about-me-section p {
@@ -140,22 +130,7 @@ h1 {
     display: none;
 }
 
-#profile-image {
-    width: 95%;
-    max-width: 350px;
-}
 
-h2 {
-    font-size: normal;
-}
-
-h3 {
-    line-height: 150%;
-}
-
-h2, h3 {
-    margin-top: 15px;    
-}
 
 #contact-info {
     display: flex;
@@ -171,7 +146,6 @@ h2, h3 {
 .social-icons i:hover, #about-me-social i:hover{
     color: #156082;
 }
-
 
 #skills {
     height: auto;
@@ -223,7 +197,7 @@ h2, h3 {
     margin-top: 50px;
     width: 100%;
     height: auto;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.4);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -344,6 +318,44 @@ form input, form textarea {
     margin: 10px;
 }
 
+.some-blue {
+    background-color: #156082;
+    border: 1px solid white;
+}
+
+.rich-black {
+    background-color: #262626;
+    border: 1px solid #7c8688
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 2px solid white;
+    background-color: #262626;
+    height: 80px;
+    text-align: center;
+    font-size: 20px;
+    color: bisque;
+}
+
+footer i {
+    font-size: 40px;
+}
+
+footer i:hover {
+    color: #156082;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 550px;
+}
+
 @media screen and (min-width: 768px) {
 
     header {
@@ -443,7 +455,6 @@ form input, form textarea {
     }
 }
 
-
 @media screen and (min-width: 992px) { 
 
     header {
@@ -475,6 +486,12 @@ form input, form textarea {
         max-width: 700px;
     }
 
+    #parallax {
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 992px) { 
     #parallax {
         background-attachment: fixed;
     }
