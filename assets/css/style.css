@@ -143,6 +143,16 @@ button:hover {
     padding-right: 25px;;
 }
 
+.social-icons a, #about-me-social a {
+    color: black;
+    text-decoration: none;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+ }
+
 .social-icons i:hover, #about-me-social i:hover{
     color: #156082;
 }
@@ -150,13 +160,12 @@ button:hover {
 #skills {
     height: auto;
     padding-top: 50px;
-    /* padding-bottom: 80px; */
     background: url(../images/bckg.webp) no-repeat center center / cover;
     border-top: 3px solid white;
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #d1cdc3;
 }
 
 #skills h3 {
@@ -186,6 +195,10 @@ button:hover {
     padding: 5px 15px;
 }
 
+.skills-box:hover { 
+    box-shadow: 1px 1px 50px black;
+}
+
 #parallax {
     height: 200px;
     background: url(../images/leon-speaking.jpg) no-repeat center center / cover;
@@ -194,7 +207,7 @@ button:hover {
 }
 
 #darker-background {
-    margin-top: 50px;
+    margin-top: -80px;
     width: 100%;
     height: auto;
     background-color: rgba(0,0,0,0.4);
@@ -252,31 +265,39 @@ blockquote {
     align-items: center;
     max-width: 800px;
 }
+
 .project-box {
-    width: 270px;
-    height: 320px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    color: rgb(232, 223, 223);
-    padding: 15px;
+    width: 270px;
     margin: 15px 5px;
+    padding: 10px;
     border: 1px solid white;
 }
 
-.project-box img {
-    height: 180px;
-    width: auto;
+.project-screenshot {
+    width: 250px;
+    transform: scale(1);
+    transition: 0.4s;
     margin-bottom: 15px;
 }
 
-.project-box span {
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
+.project-screenshot:hover {
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+.project-box i {
     font-size: 40px;
-    margin: 10px;    
+    margin: 10px;
+    margin-bottom: 15px;
+ }
+
+ .project-box a {
+    color: white;
+    text-decoration: none;
 }
 
 .project-box i:hover {
@@ -374,7 +395,7 @@ footer i:hover {
     
     .wrapper {
         margin-top: 15px;
-        max-width: 350px;;
+        max-width: 350px;
     }
 
     .wrapper p {
@@ -417,12 +438,12 @@ footer i:hover {
 
     .project-box {
         width: 330px;
-        height: 350px;
+        height: 440px;
         margin: 15px;
     }
     
-    .project-box img {
-        height: 220px;
+    .project-screenshot {
+        width: 300px;
     }
 
     #skill-ind {
