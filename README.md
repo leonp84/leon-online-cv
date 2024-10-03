@@ -1,3 +1,5 @@
 # Leon Potgieter - Developer CV & Portfolio
 
-Draft.. a work in progress
+My online CV and Portfolio
+
+Visit here: [https://leonpotgieter-dev.com/](https://leonpotgieter-dev.com/)
