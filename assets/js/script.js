@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
     });
 
-    document.getElementById('current-year').innerHTML = new Date().getFullYear() + ' Ⓒ  Leon Potgieter';
+    document.getElementById('current-year').innerHTML = new Date().getFullYear() + ' © Leon Potgieter';
 
     var tooltipTriggerList = [].slice.call(
         document.querySelectorAll('[data-bs-toggle="tooltip"]')
