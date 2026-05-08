@@ -217,15 +217,38 @@ footer a {
 #darker-background {
     margin-top: -80px;
     width: 100%;
-    height: auto;
     background-color: rgba(0,0,0,0.4);
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    /* align-items: center; */
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     padding-top: 80px;
     padding-bottom: 100px;
+}
+
+.project-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 20px 10px;
+}
+
+.skill-row {
+    width: 100%;
+    text-align: center;
+    padding: 20px 10px;
+    border-top: 1px solid rgba(255,255,255,0.15);
+}
+
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skill-icons img {
+    width: 135px;
+    margin: 8px;
 }
 
 #more-about-me {
@@ -247,33 +270,6 @@ blockquote {
     max-width: 550px;
 }
 
-#skill-ind {
-    margin: 30px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#skill-ind img {
-    margin: 10px 0;
-    width: 280px;
-}
-
-#tech-stack img {
-    width: 80px;
-    margin: 5px;
-    /* margin-top: 30px; */
-}
-
-#projects {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    max-width: 800px;
-    margin-top: 30px;
-}
 
 .project-box {
     display: flex;
@@ -418,7 +414,7 @@ footer i:hover {
 
     .project-box {
         width: 330px;
-        height: 440px;
+        min-height: 440px;
         margin: 15px;
     }
     
@@ -426,26 +422,9 @@ footer i:hover {
         width: 300px;
     }
 
-    #skill-ind {
-        margin: 30px 10px;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    #skill-ind img {
-        margin: 10px 0;
-        width: 450px;
-    }
-
-    #tech-stack {
-        margin-left: 20px;
-    }
-    
-    #tech-stack img {
-        width: 150px;
-        margin: 15px;
+    .skill-icons img {
+        width: 120px;
+        margin: 12px;
     }
 
     #parallax {
