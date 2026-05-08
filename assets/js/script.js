@@ -16,13 +16,13 @@ document.addEventListener('DOMContentLoaded', function () {
             .then(() => {
                 console.log('SUCCESS!');
                 let messageSentToast = bootstrap.Toast.getOrCreateInstance(
-                    $('#message-sent-toast')
+                    document.getElementById('message-sent-toast')
                   );
                   messageSentToast.show();
             }, (error) => {
                 console.log('FAILED...', error);
                 let messageNotSentToast = bootstrap.Toast.getOrCreateInstance(
-                    $('#message-not-sent-toast')
+                    document.getElementById('message-not-sent-toast')
                   );
                   messageNotSentToast.show();
             });
